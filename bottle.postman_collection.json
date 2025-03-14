@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "a0edd366-729d-4793-93b8-7b906c29fa04",
+		"name": "bottle",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42911541"
+	},
+	"item": [
+		{
+			"name": "add-message",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sender_id\" : 1,\n    \"text\" : \"baraye didanet blit gerftam ke biam baghe vahsh\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/bottle/add-message/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bottle",
+						"add-message",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\" : \"fred\",\n    \"last_name\" : \"abbasi\",\n    \"phonenumber\" : \"0945678927\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/bottle/signup/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bottle",
+						"signup",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

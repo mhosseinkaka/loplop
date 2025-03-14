@@ -7,11 +7,11 @@ class User(models.Model):
 
 
 class Message(models.Model):
-    sender =models.ForeignKey(to=User, on_delete=models.CASCADE, related_name="ms_sender")
-    reciever = models.ForeignKey(to=User, on_delete=models.CASCADE, related_name="ms_reciever")
+    sender =models.ForeignKey(to=User, on_delete=models.CASCADE, related_name="sent_messages")
+    reciever = models.ForeignKey(to=User, on_delete=models.CASCADE, related_name="recieved_message", null=True, blank=True)
     text = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
-    
+
 
         
     
